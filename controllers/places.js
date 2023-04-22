@@ -7,7 +7,7 @@ router.get('/', (req, res) => {
     city: 'Seattle',
     state: 'WA',
     cuisines: 'Thai, Pan-Asian',
-    pic: '/images/h-thai-ml-tables.png'
+    pic: '/images/Thai-Pan-Asian.jpg'
   }, {
       name: 'Coding Cat Cafe',
       city: 'Phoenix',
