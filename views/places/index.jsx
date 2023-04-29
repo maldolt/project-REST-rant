@@ -13,7 +13,7 @@ app.use(express.static('public'))
 app.use(express.urlencoded({ extended: true }))
 app.use(methodOverride('_method'))
 
-
+function index (data){
 let placesFormatted = data.places.map((place, index) => {
   return (
     <div className="col-sm-6">
@@ -31,19 +31,21 @@ let placesFormatted = data.places.map((place, index) => {
       </p>
     </div>
   )
+ 
 })
-
+return (
+  <Def>
+      <main>
+          <h1>Places to Rant or Rave About</h1>
+          <div className="row">
+            {placesFormatted}
+          </div>
+      </main>
+  </Def>
+) 
+}
   
-  return (
-    <Def>
-        <main>
-            <h1>Places to Rant or Rave About</h1>
-            <div className="row">
-              {placesFormatted}
-            </div>
-        </main>
-    </Def>
-  )
+
 
 
 
