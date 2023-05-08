@@ -3,6 +3,8 @@ const Def = require("../default");
 
 function show(data) {
   let comments = <h3 className="inactive">No comments yet!</h3>;
+  let rating = <h3 className="inactive">No ratings yet!</h3>;
+
   if (data.place.comments.length) {
     comments = data.place.comments.map((c) => {
       return (
