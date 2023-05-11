@@ -42,7 +42,7 @@ function show(data) {
       <main>
         <div className="row">
           <div className="col-sm-6">
-            <img src={data.place.pic} alt={data.place.name} width={'60%'}/>
+            <img src={data.place.pic} alt={data.place.name} width={'75%'}/>
             <h3>
               Located in {data.place.city}, {data.place.state}
             </h3>
